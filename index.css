@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shimmer-card {
+  width: 300px;
+  border-radius: 20px;
+  height: 400px;
+  margin: 0.7rem;
+  padding: 0.4rem;
+  animation: 2s infinite linear;
+  /* position: relative; */
+  background: #d4d0d0;
+  display: block;
+}
+.shimmer-card {
+  animation: blink-animation 0.6s steps(5, start) infinite;
+  -webkit-animation: blink-animation 0.6s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
